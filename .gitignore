@@ -9,3 +9,6 @@
 *.synctex.gz
 *.toc
 
+# Local / private copies (do not commit)
+HealthEngine_CLAUDE.md
+OLD_RESUME.pdf
