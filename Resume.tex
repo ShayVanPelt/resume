@@ -1,0 +1,206 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{ResumeAccent}{HTML}{5B21B6}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[hidelinks]{hyperref}
+
+%----------FONT OPTIONS----------
+% sans-serif (default body font — cleaner than Computer Modern for resumes)
+\usepackage[default]{sourcesanspro}
+\usepackage{microtype}
+
+% alternates (uncomment one to swap)
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting (black headings; accent rule only)
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[{\color{ResumeAccent}\titlerule\vspace{-5pt}\color{black}}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Shaylen Van Pelt} \\ \vspace{1pt}
+    \small (250) 507-8318 $|$ \href{mailto:shayvanpelt05@gmail.com}{\underline{shayvanpelt05@gmail.com}} $|$
+    \href{https://github.com/ShayVanPelt}{\underline{github.com/ShayVanPelt}} $|$
+    \href{https://linkedin.com/in/shay-van-pelt}{\underline{linkedin.com/in/shay-van-pelt}} $|$
+    \href{https://shayvanpelt.com}{\underline{shayvanpelt.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Victoria}{Victoria, BC}
+      {Bachelor of Software Engineering}{Aug. 2026}
+  
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Junior QA Analyst Co-op}{June 2025 -- Apr. 2026}
+      {Journal Technologies}{Victoria, BC}
+      \resumeItemListStart
+        \resumeItem{Drove regression, manual, and exploratory testing across releases; spot-checked production and validated tickets against expected behavior to catch defects early}
+        \resumeItem{Built and maintained TypeScript integration tests to raise coverage and keep regressions from shipping}
+        \resumeItem{Contributed production TypeScript to core application features in addition to test automation}
+        \resumeItem{Automated recurring QA spot checks with Java and Selenium, cutting runtime from 15 minutes to 5 (\textasciitilde66\% faster)}
+        \resumeItem{Partnered with QA and engineering to reproduce issues, verify fixes, and close bugs with clear handoffs}
+        \resumeItem{Authored test cases, run notes, and actionable bug reports so developers could fix issues with minimal back-and-forth}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Software Developer Co-op}{Jan. 2025 -- Apr. 2025}
+      {Certispec Services Inc.}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Crafted responsive Next.js UIs that stayed maintainable as requirements shifted}
+        \resumeItem{Centralized client state with Zustand alongside hooks and local state where it fit best}
+        \resumeItem{Introduced API pagination for large lists, shrinking payloads and improving perceived load time on heavy pages}
+        \resumeItem{Wrote PostgreSQL queries using JSONB where it reduced joins and simplified evolving schemas}
+        \resumeItem{Hardened REST endpoints with OAuth token handling and validation before data left the server}
+        \resumeItem{Closed tickets end-to-end: React components on the front, service and persistence changes on the back, plus production bug fixes}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer Co-op (Python)}{Sep. 2021 -- Dec. 2021}
+      {University of Victoria, Department of Civil Engineering}{Victoria, BC}
+      \resumeItemListStart
+        \resumeItem{Created dashboards for graduate students using Dash and React}
+        \resumeItem{Used Git for version control and resolving merge conflicts}
+        \resumeItem{Built an API that downloaded ZIP archives of technical data by country or province from the University of Victoria website}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{HealthEngine} $|$ \emph{Next.js 15, TypeScript, Prisma, Tailwind, shadcn/ui, iron-session}}{}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack fitness tracker (\href{https://healthengine.shayvanpelt.com/}{\underline{healthengine.shayvanpelt.com}}) for logging workouts (calendar, exercises, sets, and RPE), calories, weight, and per-user goals backed by Prisma and typed REST handlers}
+            \resumeItem{Implemented passwordless auth with email OTP, encrypted \texttt{iron-session} cookies, Edge middleware for route protection, and Resend for transactional email in production}
+            \resumeItem{Delivered a mobile-first dashboard with Recharts trends, unit-aware display, and PWA configuration (manifest, viewport) for add-to-home-screen installs}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Discord Economy Bot} $|$ \emph{Python, discord.py, SQLite}}{}
+          \resumeItemListStart
+            \resumeItem{Shipped a Discord bot that runs interactive chat games (roulette, blackjack, coinflip) with clear rules and user-facing feedback}
+            \resumeItem{Persisted per-user virtual currency and game outcomes in SQLite so balances survive deploys and restarts}
+            \resumeItem{Structured commands and handlers so new games and economy rules could be added without rewriting core flow}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C\#, Python, Java, TypeScript, JavaScript, SQL (PostgreSQL, SQLite)} \\
+     \textbf{Frameworks \& libraries}{: React, Next.js, Dash, Tailwind CSS, Zustand, Redux, discord.py} \\
+     \textbf{Tools}{: Git, Agile, Docker, REST APIs, Selenium, OAuth} \\
+     \textbf{Embedded}{: FreeRTOS, STM32 microcontrollers} \\
+     \textbf{Operating systems}{: Windows, macOS, Linux}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
